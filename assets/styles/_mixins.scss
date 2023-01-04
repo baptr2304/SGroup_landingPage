@@ -1,0 +1,5 @@
+@mixin centerDiv ($justifyContent,$alignItems,$display: flex) {
+    display: flex;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+}

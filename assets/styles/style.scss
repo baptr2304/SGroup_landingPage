@@ -1,0 +1,456 @@
+@import "_variables.scss";
+@import "_mixins.scss";
+html {
+  font-size: 62.5%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  font-size: 62.5%;
+
+  header {
+    width: 100%;
+    height: auto;
+    @include centerDiv(center, center);
+    box-sizing: border-box;
+    padding: 0.8rem 0;
+    color: var(--color-text-main);
+  }
+  .section-home {
+    width: 100%;
+    height: 65vh;
+    position: relative;
+    padding-top: 11rem;
+    padding-bottom: 11rem;
+    background: url(../images/bgr_section1.jpg) top 40% center no-repeat;
+    background-size: cover;
+    font-size: var(--font-size-default);
+    z-index: 999;
+  }
+  .section-partners {
+    width: 100%;
+    height: auto;
+  }
+  .section-grey {
+    width: 100%;
+    height: auto;
+    font-size: var(--font-size-default);
+    text-align: center;
+    background-color: var(--bgr-color-grey);
+    padding: 10rem 0;
+  }
+  .section-white {
+    width: 100%;
+    height: auto;
+    @include centerDiv(center, center);
+    font-size: var(--font-size-default);
+    padding: 8rem 0;
+  }
+  .section-grey2 {
+    width: 100%;
+    height: auto;
+    @include centerDiv(center, center);
+    font-size: var(--font-size-default);
+    padding: 8rem 0;
+    background-color: var(--bgr-color-grey);
+  }
+  .section-bg1 {
+    width: 100%;
+    position: relative;
+    background: url(/assets/images/section-bg-1.jpg);
+    padding: 11rem 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top center;
+    font-size: var(--font-size-default);
+    color: #fff;
+  }
+}
+header {
+  nav {
+    width: 75%;
+    height: auto;
+    @include centerDiv(space-between, center);
+    font-size: var(--font-size-default);
+  }
+}
+nav {
+  .nav__right {
+    font-size: 2.5rem;
+    color: var(--color-red);
+    font-weight: 600;
+  }
+}
+.nav__left {
+  .nav_left--item {
+    @include centerDiv(space-between, center);
+  }
+}
+.nav_left--item {
+  li {
+    list-style: none;
+    padding: 1rem 1.7rem;
+  }
+}
+.nav__left--btn {
+  a {
+    background-color: var(--color-red);
+    padding: 1.7rem 2.3rem;
+    text-decoration: none;
+    color: #fff;
+    border-radius: var(--border-radius-btn);
+  }
+}
+//section- home
+.section-home {
+  .section-home-opacity {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.39;
+    background: #000;
+  }
+  .container-home {
+    width: 75%;
+    position: absolute;
+    right: 12.5%;
+    left: 12.5%;
+    @include centerDiv(space-between, center);
+    box-sizing: border-box;
+  }
+}
+.container-home {
+  .container-home__content {
+    color: #fff;
+    width: 45%;
+  }
+  .form-register {
+    width: 40%;
+    height: auto;
+    background-color: #fff;
+    @include centerDiv(center, center);
+    border-radius: var(--border-card);
+    padding: 4rem 0;
+    font-size: var(--font-size-default);
+  }
+}
+.container-home__content {
+  h1 {
+    line-height: 1.2;
+    font-size: 4.5rem;
+  }
+}
+.home-video {
+  .home-video__ic {
+    width: 6rem;
+    height: 6rem;
+    background-color: #fff;
+    border-radius: 50%;
+    @include centerDiv(center, center);
+  }
+}
+.home-video__ic {
+  i {
+    font-size: 2.6rem;
+    color: var(--color-red);
+  }
+}
+
+.form-register {
+  .form-register__content {
+    width: 80%;
+    height: auto;
+  }
+}
+.form-register__content {
+  .input-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+  }
+  h3 {
+    color: var(--color-text-main);
+  }
+}
+.input-info {
+  .input__register {
+    height: 4.5rem;
+    border: 1px solid #f1f1f1;
+    background-color: var(--color-input);
+    border-radius: var(--border-card);
+  }
+  #input__btn-try-free {
+    background-color: var(--color-red);
+    color: #fff;
+    height: 5rem;
+  }
+  p {
+    color: var(--color-text-grey);
+  }
+}
+//section partners
+.section-partners {
+  .container-partners {
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    padding: 5rem 0;
+    font-size: var(--font-size-default);
+  }
+}
+.container-partners {
+  @include centerDiv(center, center);
+  column-gap: 3rem;
+}
+.container-partners {
+  img {
+    max-height: 5.5rem;
+  }
+}
+
+//section grey
+.section-grey {
+  .container-grey--title {
+    @include centerDiv(center, center);
+    flex-direction: column;
+    text-align: center;
+  }
+  .container-grey {
+    @include centerDiv(center, center);
+    column-gap: 3rem;
+  }
+}
+.container-grey--title {
+  h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: var(--color-text-main);
+    font-family: "Nunito", sans-serif;
+    font-weight: 900;
+  }
+  p {
+    color: var(--color-text-grey);
+  }
+}
+.container-grey {
+  .main-services {
+    width: 20%;
+    @include centerDiv(normal, center);
+    flex-direction: column;
+  }
+}
+.main-services {
+  .blue {
+    background-color: #1e90ff;
+  }
+  .red {
+    background-color: var(--color-red);
+  }
+  .green {
+    background-color: #27b36a;
+  }
+  .main-services__ic {
+    width: 7rem;
+    height: 7rem;
+    @include centerDiv(center, center);
+    border-radius: 1.5rem;
+    color: #fff;
+  }
+  h3 {
+    color: var(--color-text-main);
+  }
+  p {
+    color: var(--color-text-grey);
+  }
+}
+.main-services__ic {
+  i {
+    font-size: 3.5rem;
+  }
+}
+//section white
+
+.section-white {
+  .container-white {
+    width: 75%;
+    height: auto;
+    @include centerDiv(space-between, center);
+  }
+}
+.container-white {
+  img {
+    width: 48%;
+    border-radius: var(--border-card);
+  }
+  .container-white__content {
+    width: 48%;
+    height: auto;
+  }
+}
+.container-white__content {
+  .benefits {
+    padding: 0;
+  }
+  .btn-section-white {
+    width: 9em;
+    height: 5rem;
+    background-color: var(--color-red);
+    border-radius: var(--border-radius-btn);
+    @include centerDiv(center, center);
+  }
+}
+.white__content--title {
+  h1 {
+    color: var(--color-text-main);
+  }
+  p {
+    color: var(--color-text-grey);
+  }
+}
+.benefits {
+  .benefits_ic {
+    list-style: none;
+    color: var(--color-text-grey);
+  }
+  .benefits_ic + .benefits_ic {
+    margin-top: 0.5rem;
+  }
+}
+.benefits_ic {
+  i {
+    color: var(--color-red);
+  }
+}
+.btn-section-white {
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+//section grey2
+.section-grey2 {
+  .container-grey2 {
+    width: 75%;
+    height: auto;
+    @include centerDiv(space-between, center);
+  }
+}
+.container-grey2 {
+  img {
+    width: 48%;
+    border-radius: var(--border-card);
+  }
+  .container-grey2__content {
+    width: 48%;
+  }
+}
+.container-grey2__content {
+  .nav-list {
+    width: 100%;
+  }
+}
+.nav-list {
+  .nav-list__item {
+    @include centerDiv(center, center);
+    margin-top: 1rem;
+    border-radius: var(--border-card);
+  }
+  .list-item1 {
+    color: #1e90ff;
+    background-color: #fff;
+  }
+  .list-item2 {
+    color: var(--color-red);
+  }
+  .list-item3 {
+    color: #27b36a;
+  }
+}
+.nav-list__item {
+  .item-content__ic {
+    width: 8rem;
+    height: 8rem;
+    background-color: #fcfcfc;
+    @include centerDiv(center, center);
+    border-radius: 50%;
+    font-size: 3rem;
+    margin-right: 3rem;
+    border: 1px solid #eaeaea;
+  }
+  .item-content__text {
+    width: 70%;
+  }
+}
+.item-content__text {
+  h4 {
+    margin-bottom: 0;
+    color: var(--color-text-main);
+  }
+  p {
+    color: var(--color-text-grey);
+  }
+}
+//section-bg-1
+
+.section-bg1{
+  .section-bg1-opacity{
+    width:100%;
+    background: var(--color-red);
+    opacity: 0.95;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .container-bg1{
+    width: 100%;
+    position:relative;
+    height: 30vh;
+    flex-direction: column;
+    @include centerDiv(center,center);
+  }
+}
+.container-bg1{
+  .container-bg1__title{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+  }
+  .container-bg1__facts{
+    width: 75%;
+    height: auto;
+    @include centerDiv(center,center);
+  }
+}
+.container-bg1__facts{
+  .facts-box{
+    @include centerDiv(center,center); 
+    flex-direction: column;
+    width: 15%;
+  }
+
+}
+.facts-box{
+  i {
+    font-size: 5rem;
+  }
+  .facts__number{
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+}
