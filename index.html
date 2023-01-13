@@ -1,396 +1,594 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./assets/styles/style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Open+Sans:wght@300&family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Nunito&family=Open+Sans:wght@300&display=swap"
-      rel="stylesheet"
-    />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    />
-  </head>
-  <body>
-    <header>
-      <nav>
-        <div class="nav__right">LaunchPage</div>
-        <div class="nav__left">
-          <ul class="nav_left--item">
-            <li>Home</li>
-            <li>About</li>
-            <li>Testimonials</li>
-            <li>Work</li>
-            <li>Team</li>
-            <li>Features</li>
-            <li>Pricing</li>
-            <li class="nav__left--btn">
-              <a href="">Get Started</a>
-            </li>
-          </ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./assets/styles/style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Open+Sans:wght@300&family=Roboto&display=swap"
+    rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Nunito&family=Open+Sans:wght@300&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="nav__right">LaunchPage</div>
+      <div class="nav__left">
+        <ul class="nav_left--item">
+          <li><a href="#home" class="active"></a> Home</li>
+          <li><a href="#about"></a> About</li>
+          <li><a href="#test"></a> Testimonials</li>
+          <li><a href="#work"></a> Work</li>
+          <li><a href="#team"></a> Team</li>
+          <li><a href="#feature"></a> Features</li>
+          <li><a href="#pricing"></a> Pricing</li>
+          <li class="nav__left--btn">
+            <a href="">Get Started</a>
+          </li>
+        </ul>
+      </div>
+      <button class="navbar-toggler" type="button">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </nav>
+  </header>
+  <section class="section-home">
+    <div class="section-home-opacity"></div>
+    <div class="container-home">
+      <div class="container-home__content">
+        <h1>Award-Winning Agency Based In Manchested</h1>
+        <p class="hero-text">
+          Excepteur sint occaecat cupidatat nonet proident, vante nisn culpa
+          qui officia deserunt etimus quis autem nets lorem entimus velis
+          netsad.
+        </p>
+        <div class="home-video">
+          <div class="home-video__ic">
+            <a href="#">
+              <i class="fa-solid fa-play"></i>
+            </a>
+          </div>
+          <p>Watch Presentation Video</p>
         </div>
-      </nav>
-    </header>
-    <section class="section-home">
-      <div class="section-home-opacity"></div>
-      <div class="container-home">
-        <div class="container-home__content">
-          <h1>Award-Winning Agency Based In Manchested</h1>
-          <p class="hero-text">
-            Excepteur sint occaecat cupidatat nonet proident, vante nisn culpa
-            qui officia deserunt etimus quis autem nets lorem entimus velis
-            netsad.
-          </p>
-          <div class="home-video">
-            <div class="home-video__ic">
-              <a href="#">
-                <i class="fa-solid fa-play"></i>
-              </a>
-            </div>
-            <p>Watch Presentation Video</p>
+      </div>
+      <div class="form-register">
+        <div class="form-register__content">
+          <h3>Get Your Free 14-Day Trial</h3>
+          <p>Velis demo enim quia tempor magnet.</p>
+          <div class="input-info">
+            <input type="text" name="" id="input__name" class="input__register" placeholder="Company Name*" />
+            <input type="text" name="" id="input__email" class="input__register" placeholder="Email Adress*" />
+            <select type="text" name="" id="input__select" class="input__register"
+              placeholder="Start My Free 14-Day Trial">
+              <option value="">We need LaunchPage for...</option>
+              <option value="Individual">Our Support Team</option>
+              <option value="Professional">Our Sales Department</option>
+            </select>
+            <button type="submit" name="" id="input__btn-try-free" class="input__register">
+              Start My Free 14-Day Trial
+            </button>
+            <p>No Credit Card • No Installation Required</p>
           </div>
         </div>
-        <div class="form-register">
-          <div class="form-register__content">
-            <h3>Get Your Free 14-Day Trial</h3>
-            <p>Velis demo enim quia tempor magnet.</p>
-            <div class="input-info">
-              <input
-                type="text"
-                name=""
-                id="input__name"
-                class="input__register"
-                placeholder="Company Name*"
-              />
-              <input
-                type="text"
-                name=""
-                id="input__email"
-                class="input__register"
-                placeholder="Email Adress*"
-              />
-              <input
-                type="text"
-                name=""
-                id="input__select"
-                class="input__register"
-                placeholder="Start My Free 14-Day Trial"
-              />
-              <button
-                type="submit"
-                name=""
-                id="input__btn-try-free"
-                class="input__register"
-              >
-                Start My Free 14-Day Trial
+      </div>
+    </div>
+  </section>
+  <section class="section-partners">
+    <div class="container-partners">
+      <h5 class="partners-title">As featured in:</h5>
+      <img src="./assets/images/img_partner1.png" alt="" class="img--partner" />
+      <img src="./assets/images/img_partner2.png" alt="" class="img--partner" />
+      <img src="./assets/images/img_partner3.png" alt="" class="img--partner" />
+      <img src="./assets/images/img_partner4.png" alt="" class="img--partner" />
+    </div>
+  </section>
+  <section class="section-grey section-default">
+    <div class="section-grey__title">
+      <h1>WHAT WE DO</h1>
+      <p>Dicover how our amazing team can help your business.</p>
+    </div>
+    <div class="container-grey">
+      <div class="main-services">
+        <div class="main-services__ic blue">
+          <i class="fa-solid fa-chart-simple"></i>
+        </div>
+        <h3>Google Analitycs</h3>
+        <p>
+          Curabitur quam etsum lacus net netsum nulat iaculis etsimun vitae
+          etsum nisle varius netsum.
+        </p>
+      </div>
+      <div class="main-services">
+        <div class="main-services__ic red">
+          <i class="fa-regular fa-heart"></i>
+        </div>
+
+        <h3>Brand Awareness</h3>
+        <p>
+          Curabitur quam etsum lacus net netsum nulat iaculis etsimun vitae
+          etsum nisle varius netsum.
+        </p>
+      </div>
+      <div class="main-services">
+        <div class="main-services__ic green">
+          <i class="fa-solid fa-anchor"></i>
+        </div>
+
+        <h3>Graphic Design</h3>
+        <p>
+          Curabitur quam etsum lacus net netsum nulat iaculis etsimun vitae
+          etsum nisle varius netsum.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="section-white section-default">
+    <div class="container-white">
+      <img data-aos="fade-right" data-aos-offset="500"
+      data-aos-easing="ease-in-sine" src="./assets/images/section-white.jpg" alt="" />
+      <div class="container-white__content">
+        <div class="white__content--title">
+          <h1>Discover how we can help you to grow your business fast.</h1>
+          <p>
+            Velis demo enim ipsam voluptatem quia voluptas sit aspernatur
+            netsum lorem fugit, seditum netis velas matrix net nesciunt.
+          </p>
+        </div>
+        <ul class="benefits">
+          <li class="benefits_ic">
+            <i class="fa-solid fa-check"></i>
+            Quias netus magni netsum eos qui ratione sequi.
+          </li>
+          <li class="benefits_ic">
+            <i class="fa-solid fa-check"></i>
+            Quias netus magni netsum eos qui ratione sequi.
+          </li>
+          <li class="benefits_ic">
+            <i class="fa-solid fa-check"></i>
+            Quias netus magni netsum eos qui ratione sequi.
+          </li>
+        </ul>
+        <div class="btn-section-white">
+          <a href="#">Discover More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-grey2 section-default">
+    <div class="container-grey2">
+      <div class="container-grey2__content">
+        <div class="nav-list">
+          <a class="nav-list__item list-item1" id="nav-img1" onclick="changeImg1()">
+            <div class="item-content__ic">
+              <i class="fa-solid fa-chart-simple"></i>
+            </div>
+            <div class="item-content__text">
+              <h4>Customize your workflow.</h4>
+              <p>
+                Manage any process and be ready to address any challenge with
+                total ease.
+              </p>
+            </div>
+          </a>
+          <a class="nav-list__item list-item2" id="nav-img2" onclick="changeImg2()">
+            <div class="item-content__ic">
+              <i class="fa-solid fa-network-wired"></i>
+            </div>
+            <div class="item-content__text">
+              <h4>Easy onboarding, fast adoption.</h4>
+              <p>
+                With Square getting your team on board is as simple as sending
+                an email.
+              </p>
+            </div>
+          </a>
+          <a class="nav-list__item list-item3" id="nav-img3" onclick="changeImg3()">
+            <div class="item-content__ic">
+              <i class="fa-solid fa-rocket"></i>
+            </div>
+            <div class="item-content__text">
+              <h4>Improve subscriber retention.</h4>
+              <p>
+                Analyze customers by region, discounts and more and put a plan
+                in place.
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <img id="img-change"src="./assets/images/section-grey2.jpg" alt="" />
+    </div>
+  </section>
+  <section class="section-bg1 section-bg-default">
+    <div class="section-bg-overlay"></div>
+    <div class="container-bg1">
+      <div class="container-bg1__title">
+        <h2>Fun Facts About Our Agency</h2>
+      </div>
+      <div class="container-bg1__facts">
+        <div class="facts-box">
+          <i class="fa-solid fa-gem"></i>
+          <span class="facts__number">1050+</span>
+          <p class="facts__title">Projects Completed</p>
+        </div>
+        <div class="facts-box">
+          <i class="fa-solid fa-heart"></i>
+          <span class="facts__number">217k</span>
+          <p class="facts__title">Happy Clients</p>
+        </div>
+        <div class="facts-box">
+          <i class="fa-solid fa-award"></i>
+          <span class="facts__number">1210</span>
+          <p class="facts__title">Design Awards</p>
+        </div>
+        <div class="facts-box">
+          <i class="fa-solid fa-anchor"></i>
+          <span class="facts__number">2137</span>
+          <p class="facts__title">Line Of Codes</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-grey3 section-default">
+    <div class="container-grey3">
+      <div class="container-grey3__left">
+        <h2>What People Are Saying</h2>
+        <p>
+          Quis autem velis ets reprehender net etid quiste nets voluptate.
+          Utise wisi enim minim veniam, quis etsad aspernatis netsum stationes
+          nets.
+        </p>
+        <div class="rating-grey3">
+          <div class="testim-platform first">
+            <p>TrustPilot</p>
+            <div class="testim__rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+          </div>
+          <div class="testim-platform">
+            <p>Feefo</p>
+            <div class="testim__rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-grey3__right">
+        <div class="list-card">
+          <div class="card">
+            <div class="card-body" id="card1">
+              Nemo enim ipsam voluptatem quia voluptas situm ets aspernatis
+              netsum loris fugit, sed quia magni dolores eos quis ratione
+              sequi etum nets vesciunt neque.
+            </div>
+            <div class="card-header" onclick="displayCard1()">
+              <button class="card-header__button">
+                <img src="./assets/images/section_grey3_img1.jpg" alt="" class="testim-img" />
+                <p class="testim-name">
+                  Alexandra Smith /
+                  <span>Manager - SmartCoders</span>
+                </p>
               </button>
-              <p>No Credit Card • No Installation Required</p>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <section class="section-partners">
-      <div class="container-partners">
-        <h5 class="partners-title">As featured in:</h5>
-        <img
-          src="./assets/images/img_partner1.png"
-          alt=""
-          class="img--partner"
-        />
-        <img
-          src="./assets/images/img_partner2.png"
-          alt=""
-          class="img--partner"
-        />
-        <img
-          src="./assets/images/img_partner3.png"
-          alt=""
-          class="img--partner"
-        />
-        <img
-          src="./assets/images/img_partner4.png"
-          alt=""
-          class="img--partner"
-        />
-      </div>
-    </section>
-    <section class="section-grey">
-      <div class="container-grey__title">
-        <h1>WHAT WE DO</h1>
-        <p>Dicover how our amazing team can help your business.</p>
-      </div>
-      <div class="container-grey">
-        <div class="main-services">
-          <div class="main-services__ic blue">
-            <i class="fa-solid fa-chart-simple"></i>
-          </div>
-          <h3>Google Analitycs</h3>
-          <p>
-            Curabitur quam etsum lacus net netsum nulat iaculis etsimun vitae
-            etsum nisle varius netsum.
-          </p>
-        </div>
-        <div class="main-services">
-          <div class="main-services__ic red">
-            <i class="fa-regular fa-heart"></i>
-          </div>
-
-          <h3>Brand Awareness</h3>
-          <p>
-            Curabitur quam etsum lacus net netsum nulat iaculis etsimun vitae
-            etsum nisle varius netsum.
-          </p>
-        </div>
-        <div class="main-services">
-          <div class="main-services__ic green">
-            <i class="fa-solid fa-anchor"></i>
-          </div>
-
-          <h3>Graphic Design</h3>
-          <p>
-            Curabitur quam etsum lacus net netsum nulat iaculis etsimun vitae
-            etsum nisle varius netsum.
-          </p>
-        </div>
-      </div>
-    </section>
-    <section class="section-white">
-      <div class="container-white">
-        <img src="./assets/images/section-white.jpg" alt="" />
-        <div class="container-white__content">
-          <div class="white__content--title">
-            <h1>Discover how we can help you to grow your business fast.</h1>
-            <p>
-              Velis demo enim ipsam voluptatem quia voluptas sit aspernatur
-              netsum lorem fugit, seditum netis velas matrix net nesciunt.
-            </p>
-          </div>
-          <ul class="benefits">
-            <li class="benefits_ic">
-              <i class="fa-solid fa-check"></i>
-              Quias netus magni netsum eos qui ratione sequi.
-            </li>
-            <li class="benefits_ic">
-              <i class="fa-solid fa-check"></i>
-              Quias netus magni netsum eos qui ratione sequi.
-            </li>
-            <li class="benefits_ic">
-              <i class="fa-solid fa-check"></i>
-              Quias netus magni netsum eos qui ratione sequi.
-            </li>
-          </ul>
-          <div class="btn-section-white">
-            <a href="#">Discover More</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section-grey2">
-      <div class="container-grey2">
-        <div class="container-grey2__content">
-          <div class="nav-list">
-            <div class="nav-list__item list-item1">
-              <div class="item-content__ic">
-                <i class="fa-solid fa-chart-simple"></i>
-              </div>
-              <div class="item-content__text">
-                <h4>Customize your workflow.</h4>
-                <p>
-                  Manage any process and be ready to address any challenge with
-                  total ease.
-                </p>
-              </div>
-            </div>
-            <div class="nav-list__item list-item2">
-              <div class="item-content__ic">
-                <i class="fa-solid fa-network-wired"></i>
-              </div>
-              <div class="item-content__text">
-                <h4>Easy onboarding, fast adoption.</h4>
-                <p>
-                  With Square getting your team on board is as simple as sending
-                  an email.
-                </p>
-              </div>
-            </div>
-            <div class="nav-list__item list-item3">
-              <div class="item-content__ic">
-                <i class="fa-solid fa-rocket"></i>
-              </div>
-              <div class="item-content__text">
-                <h4>Improve subscriber retention.</h4>
-                <p>
-                  Analyze customers by region, discounts and more and put a plan
-                  in place.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <img src="./assets/images/section-grey2.jpg" alt="" />
-      </div>
-    </section>
-    <section class="section-bg1">
-      <div class="section-bg1-opacity"></div>
-      <div class="container-bg1">
-        <div class="container-bg1__title">
-          <h1>Fun Facts About Our Agency</h1>
-        </div>
-        <div class="container-bg1__facts">
-          <div class="facts-box">
-            <i class="fa-solid fa-gem"></i>
-            <span class="facts__number">1050+</span>
-            <p class="facts__title">Projects Completed</p>
-          </div>
-          <div class="facts-box">
-            <i class="fa-solid fa-heart"></i>
-            <span class="facts__number">217k</span>
-            <p class="facts__title">Happy Clients</p>
-          </div>
-          <div class="facts-box">
-            <i class="fa-solid fa-award"></i>
-            <span class="facts__number">1210</span>
-            <p class="facts__title">Design Awards</p>
-          </div>
-          <div class="facts-box">
-            <i class="fa-solid fa-anchor"></i>
-            <span class="facts__number">2137</span>
-            <p class="facts__title">Line Of Codes</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section-grey3">
-      <div class="container-grey3">
-        <div class="container-grey3__left">
-          <h2>What People Are Saying</h2>
-          <p>
-            Quis autem velis ets reprehender net etid quiste nets voluptate.
-            Utise wisi enim minim veniam, quis etsad aspernatis netsum stationes
-            nets.
-          </p>
-          <div class="rating-grey3">
-            <div class="testim-platform first">
-              <p>TrustPilot</p>
-              <div class="testim__rating">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star-half-stroke"></i>
-              </div>
-            </div>
-            <div class="testim-platform">
-              <p>Feefo</p>
-              <div class="testim__rating">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container-grey3__right">
-          <div class="list-card">
-            <div class="card">
-              <div class="card-body">
-                Nemo enim ipsam voluptatem quia voluptas situm ets aspernatis
-                netsum loris fugit, sed quia magni dolores eos quis ratione
-                sequi etum nets vesciunt neque.
-              </div>
-              <div class="card-header">
-                <button class="card-header__button">
-                  <img
-                    src="./assets/images/section_grey3_img1.jpg"
-                    alt=""
-                    class="testim-img"
-                  />
-                  <p class="testim-name">
-                    Alexandra Smith /
-                    <span>Manager - SmartCoders</span>
-                  </p>
-                </button>
-              </div>
-            </div>
-            <div class="card">
-              <!-- <div class="card-body">
+          <div class="card">
+            <div class="card-body" id="card2">
                 Nemo enim ipsam voluptatem quia voluptas situm ets aspernatis netsum loris fugit, sed quia magni dolores eos quis ratione sequi etum nets vesciunt neque.               
-              </div> -->
-              <div class="card-header">
-                <button class="card-header__button">
-                  <img
-                    src="./assets/images/section_grey3_img2.jpg"
-                    alt=""
-                    class="testim-img"
-                  />
-                  <p class="testim-name">
-                    John Doe /
-                    <span>CEO - Epic Design</span>
-                  </p>
-                </button>
               </div>
+            <div class="card-header" onclick="displayCard2()" >
+              <button class="card-header__button">
+                <img src="./assets/images/section_grey3_img2.jpg" alt="" class="testim-img" />
+                <p class="testim-name">
+                  John Doe /
+                  <span>CEO - Epic Design</span>
+                </p>
+              </button>
             </div>
-            <div class="card">
-              <!-- <div class="card-body">
+          </div>
+          <div class="card">
+              <div class="card-body" id="card3">
                 Nemo enim ipsam voluptatem quia voluptas situm ets aspernatis netsum loris fugit, sed quia magni dolores eos quis ratione sequi etum nets vesciunt neque.               
-              </div> -->
-              <div class="card-header">
-                <button class="card-header__button">
-                  <img
-                    src="./assets/images/section_grey3_img3.jpg"
-                    alt=""
-                    class="testim-img"
-                  />
-                  <p class="testim-name">
-                    Christina Pages /
-                    <span>Designer - New Fashion</span>
-                  </p>
-                </button>
-              </div>
+              </div> 
+            <div class="card-header" onclick="displayCard3()">
+              <button class="card-header__button">
+                <img src="./assets/images/section_grey3_img3.jpg" alt="" class="testim-img" />
+                <p class="testim-name">
+                  Christina Pages /
+                  <span>Designer - New Fashion</span>
+                </p>
+              </button>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <section class="section-white2">
-      <div class="container-white2__title">
-        <h2>Our Portfolio</h2>
-        <p>Dicover the latest projects accomplished for my clients.</p>
+    </div>
+  </section> 
+  <section class="section-white2 section-default">
+    <div class="section-white2__title">
+      <h2>Our Portfolio</h2>
+      <p>Dicover the latest projects accomplished for my clients.</p>
+    </div>
+    <div class="container-gallery" data-aos="fade">
+      <div class="item-gallery grid-gallery1" >
+        <div class="item item-gallery__item1 item--img-zoom">
+          <a href="" class="popup-img"><img src="./assets/images/section-white2-1.jpg" alt="">
+            <span class="eye-wrapper">
+              <i class="fa fa-search-plus eye-icon"></i>
+            </span>
+          </a>
+        </div>
+        <div class="item item-gallery__item1 item--img-zoom">
+          <a href="" class="popup-img"><img src="./assets/images/section-white2-2.jpg" alt="">
+            <span class="eye-wrapper">
+              <i class="fa fa-search-plus eye-icon"></i>
+            </span>
+          </a>
+        </div>
       </div>
-      <div class="container-gallery">
-        <div class="item-gallery">
-          <div class="item1">
-            <a href=""><img src="./assets/images/section-white2-1.jpg" alt=""></a>
+      <div class="item-gallery grid-gallery2">
+        <div class="item item-gallery__item1">
+          <a href="" class="popup-img"><img src="./assets/images/section-white2-3.jpg" alt="">
+            <span class="wrapper">
+              <i class="fa fa-search-plus eye-icon"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="item-gallery grid-gallery3">
+        <div class="item item-gallery__item1 ">
+          <a href="" class="popup-img"><img src="./assets/images/section-white2-4.jpg" alt="">
+            <span class="eye-wrapper">
+              <i class="fa fa-search-plus eye-icon"></i>
+            </span>
+          </a>
+        </div>
+        <div class="item item-gallery__item1">
+          <a href="" class="popup-img"><img src="./assets/images/section-white2-5.jpg" alt="">
+            <span class="eye-wrapper">
+              <i class="fa fa-search-plus eye-icon"></i>
+            </span>
+          </a>
+        </div>
+      </div>
+  </section>
+  <section class="section-grey4 section-default ">
+    <div class="section-grey4__title">
+      <h2>Meet Our Team</h2>
+      <p>Discover more about our high performing team.</p>
+    </div>
+    <div class="container-grey4">
+      <div class="grey4-card">
+        <img src="./assets/images/section-grey4-1.jpg" alt="">
+        <div class="team-item">
+          <h3>CHRISTINA HAWKINS</h3>
+          <div class="team-info">
+            <p>Head of SEO</p>
           </div>
-          <div class="item1">
-            <a href=""><img src="./assets/images/section-white2-2.jpg" alt=""></a>
+          <p>Johnathan is our co-founder and has developed search strategies for a variety of clients for over 5 years.
+          </p>
+        </div>
+      </div>
+      <div class="grey4-card">
+        <img src="./assets/images/section-grey4-2.jpg" alt="">
+        <div class="team-item">
+          <h3>ANDRES JOHANSON</h3>
+          <div class="team-info">
+            <p>Marketing Manager</p>
+          </div>
+          <p>Andres fell in love with marketing at the school and looks forward to being part of the industry for years.
+          </p>
+        </div>
+      </div>
+      <div class="grey4-card">
+        <img src="./assets/images/section-grey4-3.jpg" alt="">
+        <div class="team-item">
+          <h3>ALEXANDRA SMITHS</h3>
+          <div class="team-info">
+            <p>SEO Specialist</p>
+          </div>
+          <p>Graduating with a degree in Spanish, English and French, she has always loved writing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class=" section-bg2 section-bg-default">
+    <div class="section-bg2-overlay"></div>
+    <div class="container-bg2">
+      <div class="container-bg2__title">
+        <h1>Award-Winning Agency</h1>
+        <p>Utise wisi enim minim veniam, quis et stationes ullamcorper nets suscipit ets lobotis nisle consequat nihis
+          etim aspernatur netsum.</p>
+      </div>
+      <div class="container-bg2__button">
+        <a href="#" class="bg2-bt bg2-bt1">Discover More</a>
+        <a href="#" class="bg2-bt bg2-bt2">Get In Touch</a>
+      </div>
+    </div>
+  </section>
+  <section class="section-white3 section-default">
+    <div class="section-white3__title">
+      <h2>Amazing Features</h2>
+      <p>Quis autem velis ets reprehender net etid quiste voluptate.</p>
+    </div>
+    <div class="container-white3">
+      <div class="feature-box" data-aos="fade" data-aos-delay="100">
+        <i class="fa-solid fa-screwdriver-wrench"></i>
+        <div class="feature-box__text">
+          <h4>Support 24/7</h4>
+          <p>Utise wisi enim minim veniam, quis tation ullamcorper suscipit et loboti nisl consequat nihis.</p>
+        </div>
+      </div>
+      <div class="feature-box" data-aos="fade" data-aos-delay="300">
+        <i class="fa-solid fa-users"></i>
+        <div class="feature-box__text">
+          <h4>User Friendly</h4>
+          <p>Utise wisi enim minim veniam, quis tation ullamcorper suscipit et loboti nisl consequat nihis.</p>
+        </div>
+      </div>
+      <div class="feature-box" data-aos="fade" data-aos-delay="500">
+        <i class="fa-regular fa-bell"></i>
+        <div class="feature-box__text">
+          <h4>Notifications</h4>
+          <p>Utise wisi enim minim veniam, quis tation ullamcorper suscipit et loboti nisl consequat nihis.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container-white3">
+      <div class="feature-box" data-aos="fade" data-aos-delay="700">
+        <i class="fa-solid fa-gift"></i>
+        <div class="feature-box__text">
+          <h4>Support 24/7</h4>
+          <p>Utise wisi enim minim veniam, quis tation ullamcorper suscipit et loboti nisl consequat nihis.</p>
+        </div>
+      </div>
+      <div class="feature-box" data-aos="fade" data-aos-delay="900">
+        <i class="fa-solid fa-piggy-bank"></i>
+        <div class="feature-box__text">
+          <h4>User Friendly</h4>
+          <p>Utise wisi enim minim veniam, quis tation ullamcorper suscipit et loboti nisl consequat nihis.</p>
+        </div>
+      </div>
+      <div class="feature-box" data-aos="fade" data-aos-delay="1100">
+        <i class="fa-regular fa-comments"></i>
+        <div class="feature-box__text">
+          <h4>Notifications</h4>
+          <p>Utise wisi enim minim veniam, quis tation ullamcorper suscipit et loboti nisl consequat nihis.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-grey5 section-default">
+    <div class="container-grey5">
+      <div class="container-grey5__title grey5-left">
+        <h3>Great pricing plans tailored to your needs.</h3>
+        <p>Quis autem velis ets reprehender net etid quiste voluptate. Utise wisi enim minim veniam, quis et stationes
+          nets.</p>
+      </div>
+      <div class="container-grey5__card grey5-right">
+        <div class="grey5-item--box1">
+          <div class="price-box-white price-box">
+            <ul class="pricing-list">
+              <li class="price-title">MONTHLY</li>
+              <li class="price-value">$19</li>
+              <li class="price-subtitle">Per Month</li>
+              <li class="price-tag"><a href="#">GET STARTED</a></li>
+              <li class="price-text">First two weeks free.</li>
+              <li class="price-text">Amazing freatures.</li>
+            </ul>
           </div>
         </div>
-        <div class="item-gallery">
-          <div class="item1">
-            <a href=""><img src="./assets/images/section-white2-3.jpg" alt=""></a>
+        <div class="grey5-item--box2">
+          <div class="price-box-grey price-box">
+            <ul class="pricing-list">
+              <li class="price-title">ANNUALY</li>
+              <li class="price-value">$29</li>
+              <li class="price-subtitle">Per Year</li>
+              <li class="price-tag"><a href="#">GET STARTED</a></li>
+              <li class="price-text">First two weeks free.</li>
+              <li class="price-text">Save 45% with this plan</li>
+              <li class="price-text">Amazing freatures.</li>
+            </ul>
           </div>
         </div>
-        <div class="item-gallery">
-          <div class="item1">
-            <a href=""><img src="./assets/images/section-white2-4.jpg" alt=""></a>
-          </div>
-          <div class="item1">
-            <a href=""><img src="./assets/images/section-white2-5.jpg" alt=""></a>
-          </div>
+      </div>
+    </div>
+  </section>
+  <section class="section-white4 section-default">
+    <div class="section-white4__title">
+      <h2>Frequently Asked Questions</h2>
+      <p>Quis autem velis ets reprehender net etid quiste voluptate.</p>
+    </div>
+    <div class="container-white4">
+      <div class="container-white4__row">
+        <div class="faq-box">
+          <h5>Velit ut tortizi pretium viverra suspendisse?</h5>
+          <p>Utise wisi enim minim veniam, quis et stationes ullamcorper nets suscipit ets lobotis nisle consequat nihis
+            etim. Quis autem velis ets reprehender net etid quiste voluptate velite esse sedis.</p>
         </div>
-    </section>
-  </body>
+        <div class="faq-box">
+          <h5>Nibh sit amet aliquam commodo?</h5>
+          <p>Utise wisi enim minim veniam, quis et stationes ullamcorper nets suscipit ets lobotis nisle consequat nihis
+            etim. Quis autem velis ets reprehender net etid quiste voluptate velite esse sedis.</p>
+        </div>
+      </div>
+      <div class="container-white4__row">
+        <div class="faq-box">
+          <h5>Velit ut tortizi pretium viverra suspendisse?</h5>
+          <p>Utise wisi enim minim veniam, quis et stationes ullamcorper nets suscipit ets lobotis nisle consequat nihis
+            etim. Quis autem velis ets reprehender net etid quiste voluptate velite esse sedis.</p>
+        </div>
+        <div class="faq-box">
+          <h5>Nibh sit amet aliquam commodo?</h5>
+          <p>Utise wisi enim minim veniam, quis et stationes ullamcorper nets suscipit ets lobotis nisle consequat nihis
+            etim. Quis autem velis ets reprehender net etid quiste voluptate velite esse sedis.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+  <section class="section-bg3 section-bg-default">
+    <div class="section-bg3-overlay"></div>
+    <div class="container-bg3">
+      <div class="container-bg3__title">
+        <h2>Contact Us</h2>
+        <p>Have any queries? Get in touch today.</p>
+      </div>
+      <form class="container-bg3__form">
+        <input type="text" class="input input1" placeholder="Your Name*">
+        <input type="text" class="input input2" placeholder="Email Adress*">
+        <input type="text" class="input input3" placeholder="Phone Number*">
+        <select name="" id="" class="input input4 bg3-form--select">
+          <option value="">Choose Option</option>
+          <option value="Individual">Individual</option>
+          <option value="Corporate">Corporate</option>
+        </select>
+        <textarea name="" id="" cols="30" rows="10" class="text-area" placeholder="Your Message..."></textarea>
+      </form>
+      <input value="Get In Touch" type="submit" class="contact-submit">
+    </div>
+  </section>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-container__left">
+        <p>© 2020&nbsp;<span>LaunchPage</span>. Designed by <a href="#">Epic-Themes</a></p>
+      </div>
+      <div class="footer-container__right">
+        <ul class="footer_social">
+          <li>Follw us:</li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+          <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fab fa-skype"></i></a></li>
+
+          <li><a href="#"><i class="fab fa-dribble"></i></a></li>
+
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
 </html>
