@@ -35,8 +35,8 @@ function changeImg3() {
 var x = document.getElementById("card1");
 var y = document.getElementById("card2");
 var z = document.getElementById("card3");
-function displayCard1() {
 
+function displayCard1() {
    if(x.style.display === "none"){
       x.style.display = "block";
       y.style.display = "none";
@@ -69,12 +69,6 @@ function displayCard3() {
    }
 }
 //  //popup gallery 
-
-
-const gallery = document.getElementById('gallery-container');
+const gallery = document.getElementById('gallery');
 const viewer = new Viewer(gallery);
-
-
-
-
 

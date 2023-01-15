@@ -23,7 +23,12 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
-    
+    <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.5/viewer.min.js"
+  integrity="sha512-i5q29evO2Z4FHGCO+d5VLrwgre/l+vaud5qsVqQbPXvHmD9obORDrPIGFpP2+ep+HY+z41kAmVFRHqQAjSROmA=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+  ></script>
 </head>
 
 <body>
@@ -32,7 +37,7 @@
       <div class="nav__right">LaunchPage</div>
       <div class="nav__left">
         <ul class="nav_left--item">
-          <li><a href="#home" class="nav-link"></a> Home</li>
+          <li><a class="active" href="#home" class="nav-link"></a>Home</li>
           <li><a href="#about" class="nav-link"></a> About</li>
           <li><a href="#test" class="nav-link"></a> Testimonials</li>
           <li><a href="#work" class="nav-link"></a> Work</li>
@@ -40,7 +45,7 @@
           <li><a href="#feature" class="nav-link"></a> Features</li>
           <li><a href="#pricing" class="nav-link"></a> Pricing</li>
           <li class="nav__left--btn">
-            <a href="">Get Started</a>
+            <a href="contact">Get Started</a>
           </li>
         </ul>
       </div>
@@ -49,7 +54,7 @@
       </button>
     </nav>
   </header>
-  <section class="section-home">
+  <section class="section-home" id="home">
     <div class="section-home-opacity"></div>
     <div class="container-home">
       <div class="container-home__content">
@@ -90,7 +95,7 @@
       </div>
     </div>
   </section>
-  <section class="section-partners">
+  <section class="section-partners" >
     <div class="container-partners">
       <h5 class="partners-title">As featured in:</h5>
       <img src="./assets/images/img_partner1.png" alt="" class="img--partner" />
@@ -99,7 +104,8 @@
       <img src="./assets/images/img_partner4.png" alt="" class="img--partner" />
     </div>
   </section>
-  <section class="section-grey section-default">
+  <section id="about" class="section-grey section-default" >
+    
     <div class="section-grey__title">
       <h1>WHAT WE DO</h1>
       <p>Dicover how our amazing team can help your business.</p>
@@ -246,7 +252,7 @@
       </div>
     </div>
   </section>
-  <section class="section-grey3 section-default">
+  <section id ="test"class="section-grey3 section-default">
     <div class="container-grey3">
       <div class="container-grey3__left">
         <h2>What People Are Saying</h2>
@@ -330,12 +336,12 @@
       </div>
     </div>
   </section>
-  <section class="section-white2 section-default">
+  <section id="work" class="section-white2 section-default">
     <div class="section-white2__title">
       <h2>Our Portfolio</h2>
       <p>Dicover the latest projects accomplished for my clients.</p>
     </div>
-    <div class="container-gallery wow fadeIn" data-wow-delay="0.5s" id="gallery-container">
+    <div class="container-gallery wow fadeIn" data-wow-delay="0.5s" id="gallery">
       <div class="item-gallery grid-gallery1">
         <div class="item item-gallery__item1 item--img-zoom item-gallery--click">
          <img src="./assets/images/section-white2-1.jpg" alt="">
@@ -373,7 +379,7 @@
         </div>
       </div>
   </section>
-  <section class="section-grey4 section-default ">
+  <section id="team" class="section-grey4 section-default ">
     <div class="section-grey4__title">
       <h2>Meet Our Team</h2>
       <p>Discover more about our high performing team.</p>
@@ -427,7 +433,7 @@
       </div>
     </div>
   </section>
-  <section class="section-white3 section-default">
+  <section id="feature" class="section-white3 section-default">
     <div class="section-white3__title">
       <h2>Amazing Features</h2>
       <p>Quis autem velis ets reprehender net etid quiste voluptate.</p>
@@ -479,7 +485,7 @@
       </div>
     </div>
   </section>
-  <section class="section-grey5 section-default">
+  <section id="pricing" class="section-grey5 section-default">
     <div class="container-grey5">
       <div class="container-grey5__title grey5-left">
         <h3>Great pricing plans tailored to your needs.</h3>
@@ -550,7 +556,7 @@
 
   </section>
   <section class="section-bg3 section-bg-default">
-    <div class="section-bg3-overlay"></div>
+    <div id="contact" class="section-bg3-overlay"></div>
     <div class="container-bg3">
       <div class="container-bg3__title">
         <h2>Contact Us</h2>
@@ -595,12 +601,7 @@
   <script>
     new WOW().init();
   </script>
-  <script
-  src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.5/viewer.min.js"
-  integrity="sha512-i5q29evO2Z4FHGCO+d5VLrwgre/l+vaud5qsVqQbPXvHmD9obORDrPIGFpP2+ep+HY+z41kAmVFRHqQAjSROmA=="
-  crossorigin="anonymous"
-  referrerpolicy="no-referrer"
-  ></script>
+
 </body>
 
 </html>

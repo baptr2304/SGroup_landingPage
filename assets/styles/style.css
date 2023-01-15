@@ -14,6 +14,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 li {
@@ -32,6 +33,7 @@ body {
   box-sizing: border-box;
   font-family: "Nunito", sans-serif;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 body header {
   width: 100%;
@@ -627,7 +629,7 @@ nav .navbar-toggler {
   font-weight: 600;
   line-height: 1.6;
   display: none;
-  transition: 0.3s;
+  transition: 0.5s ease;
 }
 
 .card-header .card-header__button {
@@ -1359,7 +1361,7 @@ footer .footer-container {
   .nav__left {
     position: fixed;
     top: 7rem;
-    left: -100%;
+    left: 0;
     right: 0;
     background-color: #fff;
     width: 100%;
@@ -1373,6 +1375,7 @@ footer .footer-container {
     -moz-column-gap: 3rem;
          column-gap: 3rem;
     padding-left: 12.5%;
+    padding-bottom: 2rem;
   }
   .nav_left--item .nav__left--btn a {
     padding: 1rem;
@@ -1382,7 +1385,7 @@ footer .footer-container {
   }
   .nav__left.active {
     height: 34rem;
-    left: 0;
+    top: -50%;
   }
   .nav__left.active {
     display: block;
