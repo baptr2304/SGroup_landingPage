@@ -13,9 +13,17 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Nunito&family=Open+Sans:wght@300&display=swap"
     rel="stylesheet" />
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/styles/animate.css">
+  <link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.5/viewer.css"
+			integrity="sha512-c7kgo7PyRiLnl7mPdTDaH0dUhJMpij4aXRMOHmXaFCu96jInpKc8sZ2U6lby3+mOpLSSlAndRtH6dIonO9qVEQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+    
 </head>
 
 <body>
@@ -24,13 +32,13 @@
       <div class="nav__right">LaunchPage</div>
       <div class="nav__left">
         <ul class="nav_left--item">
-          <li><a href="#home" class="active"></a> Home</li>
-          <li><a href="#about"></a> About</li>
-          <li><a href="#test"></a> Testimonials</li>
-          <li><a href="#work"></a> Work</li>
-          <li><a href="#team"></a> Team</li>
-          <li><a href="#feature"></a> Features</li>
-          <li><a href="#pricing"></a> Pricing</li>
+          <li><a href="#home" class="nav-link"></a> Home</li>
+          <li><a href="#about" class="nav-link"></a> About</li>
+          <li><a href="#test" class="nav-link"></a> Testimonials</li>
+          <li><a href="#work" class="nav-link"></a> Work</li>
+          <li><a href="#team" class="nav-link"></a> Team</li>
+          <li><a href="#feature" class="nav-link"></a> Features</li>
+          <li><a href="#pricing" class="nav-link"></a> Pricing</li>
           <li class="nav__left--btn">
             <a href="">Get Started</a>
           </li>
@@ -133,8 +141,8 @@
   </section>
   <section class="section-white section-default">
     <div class="container-white">
-      <img data-aos="fade-right" data-aos-offset="500"
-      data-aos-easing="ease-in-sine" src="./assets/images/section-white.jpg" alt="" />
+      <img class="wow slideInLeft" 
+        src="./assets/images/section-white.jpg" alt="" />
       <div class="container-white__content">
         <div class="white__content--title">
           <h1>Discover how we can help you to grow your business fast.</h1>
@@ -205,7 +213,7 @@
           </a>
         </div>
       </div>
-      <img id="img-change"src="./assets/images/section-grey2.jpg" alt="" />
+      <img id="img-change" src="./assets/images/section-grey2.jpg" alt="" />
     </div>
   </section>
   <section class="section-bg1 section-bg-default">
@@ -290,9 +298,10 @@
           </div>
           <div class="card">
             <div class="card-body" id="card2">
-                Nemo enim ipsam voluptatem quia voluptas situm ets aspernatis netsum loris fugit, sed quia magni dolores eos quis ratione sequi etum nets vesciunt neque.               
-              </div>
-            <div class="card-header" onclick="displayCard2()" >
+              Nemo enim ipsam voluptatem quia voluptas situm ets aspernatis netsum loris fugit, sed quia magni dolores
+              eos quis ratione sequi etum nets vesciunt neque.
+            </div>
+            <div class="card-header" onclick="displayCard2()">
               <button class="card-header__button">
                 <img src="./assets/images/section_grey3_img2.jpg" alt="" class="testim-img" />
                 <p class="testim-name">
@@ -303,9 +312,10 @@
             </div>
           </div>
           <div class="card">
-              <div class="card-body" id="card3">
-                Nemo enim ipsam voluptatem quia voluptas situm ets aspernatis netsum loris fugit, sed quia magni dolores eos quis ratione sequi etum nets vesciunt neque.               
-              </div> 
+            <div class="card-body" id="card3">
+              Nemo enim ipsam voluptatem quia voluptas situm ets aspernatis netsum loris fugit, sed quia magni dolores
+              eos quis ratione sequi etum nets vesciunt neque.
+            </div>
             <div class="card-header" onclick="displayCard3()">
               <button class="card-header__button">
                 <img src="./assets/images/section_grey3_img3.jpg" alt="" class="testim-img" />
@@ -319,52 +329,47 @@
         </div>
       </div>
     </div>
-  </section> 
+  </section>
   <section class="section-white2 section-default">
     <div class="section-white2__title">
       <h2>Our Portfolio</h2>
       <p>Dicover the latest projects accomplished for my clients.</p>
     </div>
-    <div class="container-gallery" data-aos="fade">
-      <div class="item-gallery grid-gallery1" >
-        <div class="item item-gallery__item1 item--img-zoom">
-          <a href="" class="popup-img"><img src="./assets/images/section-white2-1.jpg" alt="">
+    <div class="container-gallery wow fadeIn" data-wow-delay="0.5s" id="gallery-container">
+      <div class="item-gallery grid-gallery1">
+        <div class="item item-gallery__item1 item--img-zoom item-gallery--click">
+         <img src="./assets/images/section-white2-1.jpg" alt="">
             <span class="eye-wrapper">
               <i class="fa fa-search-plus eye-icon"></i>
             </span>
-          </a>
         </div>
-        <div class="item item-gallery__item1 item--img-zoom">
-          <a href="" class="popup-img"><img src="./assets/images/section-white2-2.jpg" alt="">
+        <div class="item item-gallery__item1 item--img-zoom item-gallery--click" >
+          <img src="./assets/images/section-white2-2.jpg" alt="">
             <span class="eye-wrapper">
               <i class="fa fa-search-plus eye-icon"></i>
             </span>
-          </a>
         </div>
       </div>
       <div class="item-gallery grid-gallery2">
-        <div class="item item-gallery__item1">
-          <a href="" class="popup-img"><img src="./assets/images/section-white2-3.jpg" alt="">
+        <div class="item item-gallery__item1 item-gallery--click">
+          <img src="./assets/images/section-white2-3.jpg" alt="">
             <span class="wrapper">
               <i class="fa fa-search-plus eye-icon"></i>
             </span>
-          </a>
         </div>
       </div>
       <div class="item-gallery grid-gallery3">
-        <div class="item item-gallery__item1 ">
-          <a href="" class="popup-img"><img src="./assets/images/section-white2-4.jpg" alt="">
+        <div class="item item-gallery__item1 item-gallery--click" >
+          <img src="./assets/images/section-white2-4.jpg" alt="">
             <span class="eye-wrapper">
               <i class="fa fa-search-plus eye-icon"></i>
             </span>
-          </a>
         </div>
-        <div class="item item-gallery__item1">
-          <a href="" class="popup-img"><img src="./assets/images/section-white2-5.jpg" alt="">
+        <div class="item item-gallery__item1 item-gallery--click" > 
+          <img src="./assets/images/section-white2-5.jpg" alt="">
             <span class="eye-wrapper">
               <i class="fa fa-search-plus eye-icon"></i>
             </span>
-          </a>
         </div>
       </div>
   </section>
@@ -428,21 +433,21 @@
       <p>Quis autem velis ets reprehender net etid quiste voluptate.</p>
     </div>
     <div class="container-white3">
-      <div class="feature-box" data-aos="fade" data-aos-delay="100">
+      <div class="feature-box wow fadeIn" data-wow-delay="0.1s">
         <i class="fa-solid fa-screwdriver-wrench"></i>
         <div class="feature-box__text">
           <h4>Support 24/7</h4>
           <p>Utise wisi enim minim veniam, quis tation ullamcorper suscipit et loboti nisl consequat nihis.</p>
         </div>
       </div>
-      <div class="feature-box" data-aos="fade" data-aos-delay="300">
+      <div class="feature-box wow fadeIn" data-wow-delay="0.3s">
         <i class="fa-solid fa-users"></i>
         <div class="feature-box__text">
           <h4>User Friendly</h4>
           <p>Utise wisi enim minim veniam, quis tation ullamcorper suscipit et loboti nisl consequat nihis.</p>
         </div>
       </div>
-      <div class="feature-box" data-aos="fade" data-aos-delay="500">
+      <div class="feature-box wow fadeIn" data-wow-delay="0.5s">
         <i class="fa-regular fa-bell"></i>
         <div class="feature-box__text">
           <h4>Notifications</h4>
@@ -451,21 +456,21 @@
       </div>
     </div>
     <div class="container-white3">
-      <div class="feature-box" data-aos="fade" data-aos-delay="700">
+      <div class="feature-box wow fadeIn" data-wow-delay="0.7s">
         <i class="fa-solid fa-gift"></i>
         <div class="feature-box__text">
           <h4>Support 24/7</h4>
           <p>Utise wisi enim minim veniam, quis tation ullamcorper suscipit et loboti nisl consequat nihis.</p>
         </div>
       </div>
-      <div class="feature-box" data-aos="fade" data-aos-delay="900">
+      <div class="feature-box wow fadeIn" data-wow-delay="0.9s">
         <i class="fa-solid fa-piggy-bank"></i>
         <div class="feature-box__text">
           <h4>User Friendly</h4>
           <p>Utise wisi enim minim veniam, quis tation ullamcorper suscipit et loboti nisl consequat nihis.</p>
         </div>
       </div>
-      <div class="feature-box" data-aos="fade" data-aos-delay="1100">
+      <div class="feature-box wow fadeIn" data-wow-delay="1.1s">
         <i class="fa-regular fa-comments"></i>
         <div class="feature-box__text">
           <h4>Notifications</h4>
@@ -483,7 +488,7 @@
       </div>
       <div class="container-grey5__card grey5-right">
         <div class="grey5-item--box1">
-          <div class="price-box-white price-box">
+          <div class="price-box-white price-box wow bounceIn">
             <ul class="pricing-list">
               <li class="price-title">MONTHLY</li>
               <li class="price-value">$19</li>
@@ -495,7 +500,7 @@
           </div>
         </div>
         <div class="grey5-item--box2">
-          <div class="price-box-grey price-box">
+          <div class="price-box-grey price-box wow bounceIn" data-wow-delay = "0.3s">
             <ul class="pricing-list">
               <li class="price-title">ANNUALY</li>
               <li class="price-value">$29</li>
@@ -551,7 +556,7 @@
         <h2>Contact Us</h2>
         <p>Have any queries? Get in touch today.</p>
       </div>
-      <form class="container-bg3__form">
+      <form class="container-bg3__form wow bounceIn">
         <input type="text" class="input input1" placeholder="Your Name*">
         <input type="text" class="input input2" placeholder="Email Adress*">
         <input type="text" class="input input3" placeholder="Phone Number*">
@@ -585,10 +590,17 @@
       </div>
     </div>
   </footer>
-  <script src="script.js"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="./js/script.js"></script>
+  <script src="js/wow.min.js"></script>
   <script>
-    AOS.init();
+    new WOW().init();
   </script>
+  <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/viewerjs/1.10.5/viewer.min.js"
+  integrity="sha512-i5q29evO2Z4FHGCO+d5VLrwgre/l+vaud5qsVqQbPXvHmD9obORDrPIGFpP2+ep+HY+z41kAmVFRHqQAjSROmA=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+  ></script>
 </body>
+
 </html>
