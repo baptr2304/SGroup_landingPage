@@ -10,6 +10,10 @@ li {
 a {
   text-decoration: none;
 }
+a:visited{
+  color: var(--color-text-main);
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -18,8 +22,6 @@ body {
   box-sizing: border-box;
   font-family: "Nunito", sans-serif;
   font-size: 62.5%;
-  scroll-behavior: smooth;
-
 
   header {
     width: 100%;
@@ -94,7 +96,7 @@ header {
   nav {
     width: 100%;
     height: auto;
-    margin: 0 12.5%;
+    margin: 1rem 12.5%;
     @include centerDiv(space-between, center);
     font-size: var(--font-size-default);
     z-index: 2;
@@ -102,9 +104,10 @@ header {
 }
 nav {
   .nav__right {
-    font-size: 2.5rem;
+    font-size: 2.7rem;
     color: var(--color-red);
     font-weight: 600;
+    cursor: pointer;
   }
   .navbar-toggler {
     display: none;
@@ -113,15 +116,15 @@ nav {
 .nav__left {
   .nav_left--item {
     @include centerDiv(normal, center);
-    gap: 1.3rem;
+    gap: 3rem;
   }
 }
 .nav_left--item {
   li {
     list-style: none;
   }
-  li:hover {
-    transition: all 0.5s ease;
+   a:hover {
+    transition: all 0.2s ease;
     color: var(--color-red);
     cursor: pointer;
   }
@@ -1315,15 +1318,6 @@ footer {
     transform: scale(1);
   }
 }
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
 
 //responsive
 
@@ -1341,41 +1335,44 @@ footer {
   }
 
   // btn hambuger
-  .nav__left {
-    position: fixed;
-    top:7rem;
-    left: 0;
-    right: 0;
-    background-color: #fff;
-    width: 100%;
-    transition: 0.3s;
+  nav {
+    // padding: 2rem 0;
 
+  }
+  nav{
+    .nav__left {
+      position: fixed;
+      top:7rem;
+      left: 0;
+      right: 0;
+      background-color: #fff;
+      width: 100%;
+      display: none;
+    }
   }
   .nav__left {
     .nav_left--item {
       @include centerDiv(normal, flex-start);
       flex-direction: column;
-      column-gap: 3rem;
       padding-left: 12.5%;
       padding-bottom: 2rem;
+      gap:1.2rem;
     }
   }
   .nav_left--item {
-    .nav__left--btn a {
-      padding: 1rem;
+    .nav__left--btn{
+      margin-top: 1rem;
     }
   }
-  nav {
-    padding: 2rem 0;
+  .nav__left--btn a {
+    padding: 1rem;
   }
   .nav__left.active {
     height: 34rem;
-    top:-50%;
-    // visibility: hidden;
-  }
-  .nav__left.active {
     display: block;
+
   }
+
 }
 @media (max-width: 960px) {
   .section-home {
